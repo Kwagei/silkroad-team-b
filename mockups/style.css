@@ -3,10 +3,11 @@ body {
     
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
-    background-image: url(/Spectacular-Brentwood-Home-with-Sublime-Setting-for-Sale-at-7695000-6.jpg);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)
+      ), url(/Spectacular-Brentwood-Home-with-Sublime-Setting-for-Sale-at-7695000-6.jpg);
     background-repeat: no-repeat;
-    background-size: 1373px;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rethink Sans', sans-serif;
@@ -39,7 +40,6 @@ header svg {
 .filterBar {
 
     background-color: #00000079;
-    width: 98%;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ header svg {
 
 .filterBar  p {
 
-    margin-right: 230px;
+    margin-right: 580px;
 }
  
 .filterBar button {
@@ -64,6 +64,7 @@ header svg {
     font-size: 10px;
     padding: 8px;
     font-weight: 900;
+    flex-shrink: 0;
 
 }
  
@@ -89,9 +90,9 @@ header svg {
     display: flex;
     align-items: center;
     font-size: 22px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     font-weight: 900;
+    width: 550px;
 }
 
 .buyItems p {
