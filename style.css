@@ -113,3 +113,22 @@ header svg {
     font-weight: bold;
     font-size: 23px;
 }
+
+@media (max-width : 1900px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    header svg{
+        display: none;
+    }
+    .filterBar{
+        display: none;
+    }
+    .silkroad{
+        background-color: #20a099;
+        /* display: none; */
+    }
+    
+}
