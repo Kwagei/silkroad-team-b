@@ -8,41 +8,34 @@ body {
       ), url(/Spectacular-Brentwood-Home-with-Sublime-Setting-for-Sale-at-7695000-6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Rethink Sans', sans-serif;
-    font-family: 'Roboto', sans-serif; 
 
 }
-
- body header {
-
+* 
+ header {
     background-color: #000000c2;
-    width: 98%;
-    height: 40px;
-    padding: 8px;
+    padding: 0 1rem;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight:900;
-       
-
+    
 }
 
 header svg {
 
     fill: #20a099;
     border: 2px solid #20a099;
-    margin: 8px;
 }
 
 .filterBar {
 
     background-color: #00000079;
-    padding: 5px;
+    padding:  0.5rem 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-evenly;
     align-items: center;
     color: #ffffff;
     fill: #ffffff;
@@ -50,32 +43,44 @@ header svg {
 
 }
 
-.filterBar  p {
-
-    margin-right: 580px;
+.filterTextIcon {
+    display: flex;
+    text-transform: uppercase;
+    gap: 5px;
+    align-items: center;
 }
+
  
 .filterBar button {
-
     background-color: #4169e1;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    font-size: 10px;
-    padding: 8px;
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
     font-weight: 900;
     flex-shrink: 0;
+
+}
+
+
+.heroSection {
+
+    position: relative;
+    padding: 4rem 2rem;
+    color: white;
+    height: 80svh;
+    fill: #ffffff;
 
 }
  
 .shortNote {
 
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 29px;
+    font-size: 21px;
     text-align: center;
     font-weight: 900;
 
@@ -84,32 +89,54 @@ header svg {
 
 .buyItems {
 
-    background-color: rgba(0, 0, 0, 0.34);
-    color: white;
+    background-color: rgba(5, 5, 5, 0.644);
+    color: rgba(255, 255, 255, 0.568);
     fill: white;
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 15px;
     margin: 0 auto;
-    font-weight: 900;
-    width: 550px;
-}
-
-.buyItems p {
-
-    margin-left: 15px;
+    padding-inline: 1rem;
+    gap: 15px;
 
 }
+
+.buyItems svg{
+    flex-shrink: 0;
+}
+
+
+
 
 .adsBtn {
-
-
-    /* background-color: #20a099; */
-    height: 340px;
-    display: flex;
+    position: absolute;
+    inset: 0;
+    margin: auto auto 10rem auto;
+    display: flex; 
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
     justify-content:flex-end;
     font-weight: bold;
     font-size: 23px;
+    align-self: baseline;
+}
+
+.adsBtn p , 
+.adsBtn svg {
+    margin: 0;
+}
+
+@media (min-width:230px){
+    .filterBar{
+        justify-content: space-between;
+    }
+
+    .shortNote {
+        font-size: 29px;
+    }
+
+    .buyItems {
+        font-size: 18px;
+    }
 }
