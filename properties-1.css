@@ -1,0 +1,317 @@
+:root{
+    --black: #191818;
+    --gray: gray;
+    --darkgray: #505050;
+    --lightgray: #d7dce2;
+    --green: #38a9a2;
+    --mediumgray:  #708090; 
+    --white: #ffffff;
+    --poppins: 'Poppins', sans-serif ;
+    --oldgray: #e8e8e8;
+    --oldwhite: #f5f5f5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins);
+    background-color: #f5f5f5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+select{
+    background-color: var(--white);
+    padding: 5px;
+    border: 0;
+}
+label{
+    color: var(--mediumgray);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+form h3{
+    color: var(--mediumgray);
+}
+input::placeholder{
+    color: var(--white);
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 72px 1fr;
+    gap: 1rem;
+    padding: 1rem 4rem;
+}
+
+.main-item{
+    padding: 1rem;
+}
+
+
+.filter{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: var(--lightgray);
+    height: fit-content;
+    
+}
+
+.filter-item{
+    display: flex;
+    flex-direction: column;
+    padding-block: 0.6rem;
+}
+
+select {
+    color: var(--mediumgray)
+}
+
+
+.search input{
+    background-color: var(--darkgray);
+    border: 0;
+    padding: 5px;
+}
+
+.done button{
+    background-color: var(--mediumgray);
+    color: var(--white);
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--oldgray);
+    grid-column: 2/4;
+    font-size: 15px;
+   
+}
+
+.left{
+    display: flex;
+    gap: 10px;
+    color: var(--darkgray);
+    border: 2px solid;
+    
+}
+
+.all{
+    color: var(--green);
+}
+.middle{ 
+    display: flex;
+    gap: 10px;
+    color: var(--darkgray);
+    border: 2px solid;
+}
+
+.middle i{ 
+    font-size: 30px;
+}
+.right{
+    display: flex;
+    gap: 5px;
+    color: var(--darkgray);
+    border: 2px solid;
+}
+
+.houses{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    grid-column: 2/3;
+    padding: 0;
+
+}
+
+.house-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.house-img img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.house-info{
+    background-color: var(--white);
+}
+
+.house-info-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.ri-star-line{
+    margin-top: 50px;
+    padding: 5px;
+    font-size: 20px;
+    color: var(--lightgray);
+}
+
+.house-info i{
+    color: var(--green);
+    padding-left: 30px;
+}
+
+.house-info-1 h3, h4, p{
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.house-info-1 p{
+    font-size: 15px;
+    padding-left: 30px;
+
+}
+
+.house-info-1 h4{
+
+    font-size: 25px;
+    padding-left: 30px;
+    
+}
+
+.house-location{
+    display: flex;
+}
+
+.house-info-buttom{
+    /* background-color: azure; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: px;
+    text-align: center;
+    margin-top: 50;
+    
+}
+
+.house-info-buttom h3{
+    color: var(--gray);
+    font-weight: var(--mediumgray);
+    font-size: 15px;
+    
+    
+}
+
+.buttom-1{
+    
+    border: 1px solid var(--oldgray);
+}
+
+.buttom-2{
+    border: 1px solid var(--oldgray);
+}
+
+.buttom-3{
+    border: 1px solid var(--oldgray);
+}
+
+.buttom-4{
+    border: 1px solid var(--oldgray);
+}
+.ad{
+    background-color: var(--white);
+    grid-column: 3/4;
+    height: 500px;
+    
+}
+
+.ad p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100%;
+}
+
+
+
+.baseLine {
+    background-color: #0080ff;
+    display: flex;
+    height: 22rem;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.baseLine div {
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.baseLine div span {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+.baseLine  .linksDiv #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.baseLine  .linksDiv #links a {
+    text-decoration: none;
+    color: white;    
+    
+}
+
+.baseLine .address span {
+    height: 3rem;
+    font-size: 10px;
+    justify-content: center;
+    fill: aliceblue;
+
+}
+
+.address span svg {
+    width: 13px;
+    height: 11px;
+}
+
+.address{
+    color: var(--white);
+}
+
+.baseLine .icons {
+    width: 10rem;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.baseLine .icons svg {
+    width: 20px;
+    fill: white;
+}
